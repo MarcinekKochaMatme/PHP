@@ -1,0 +1,48 @@
+
+<html>
+<body>
+
+<form action="welcome.php" method="post">
+Wzrost <input type="text" name="wzrost"><br>
+Waga <input type="text" name="waga"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<html>
+<body>
+
+<?php $Wzrost= $_POST["wzrost"]; 
+	echo $Wzrost;
+	?><br>
+<?php $Waga= $_POST["waga"];
+echo $Waga;
+ ?><br>
+
+
+<?php
+$BMI=$Waga/($Wzrost*$Wzrost);
+echo $BMI;
+if($BMI<19.5)
+{
+	print("Masz niedowage");
+}
+if($BMI>25)
+{
+	print("Masz nadwage");
+}
+if($BMI>=19.5 && $BMI=<25)
+{
+	print("Masz idealną wage");
+}
+?>
+</body>
+</html>
