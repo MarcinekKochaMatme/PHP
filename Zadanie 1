@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<?php $A= $_POST["a"]; 
+	echo($A);
+	?><br>
+<?php $B= $_POST["b"]; ?><br>
+<?php $C= $_POST["c"]; ?><br>
+
+<?php
+$Delta= pow($B,2)- (4*$A*$C);
+
+
+
+
+?>
+</body>
+</html>
